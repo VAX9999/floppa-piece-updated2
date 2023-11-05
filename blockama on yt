@@ -1,0 +1,2014 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ 
+local Window = Rayfield:CreateWindow({
+   Name = "🐈 Floppa piece Script Made by 27k_ManL only",
+   LoadingTitle = "Joseph Hub",
+   LoadingSubtitle = "by 27k_ManL",
+   ConfigurationSaving = {
+      Enabled = false,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Joseph Hub"
+   },
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = false, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Untitled",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided",
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Hello"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+ 
+local MainTab = Window:CreateTab("Get Fruits", nil) -- Title, 
+local MainSection = MainTab:CreateSection("Fruits")
+ 
+Rayfield:Notify({
+   Title = "You executed the script!",
+   Content = "Updated made by blockama on youtube",
+   Duration = 6.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Best Script!",
+         Callback = function()
+         print("The user tapped Okay!")
+      end
+   },
+},
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Gear 5",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.gear5.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Mui",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.mui.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Pika V2",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.lightv2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Gojo",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.gojo.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Phoenix",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.phoenix.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Gomu",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.gomu.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Dough",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame["1b"].RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Spirit",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame["2b"].RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MainTab:CreateButton({
+   Name = "Get Dragon",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame["3b"].RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+ 
+ 
+ 
+ 
+ 
+local SwordTab = Window:CreateTab("Get Swords", nil) -- Title, 
+local SwordSection = SwordTab:CreateSection("Swords")
+ 
+local Button = SwordTab:CreateButton({
+   Name = "Get True Yoru",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.darkbalde.RemoteEvent:FireServer()
+ 
+   end,
+})
+ 
+local Button = SwordTab:CreateButton({
+    Name = "Get Hallow Scythe",
+    Callback = function()
+    local args = {
+    [1] = game:GetService("Players").LocalPlayer
+
+        }
+
+        game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.scythe.RemoteEvent:FireServer()
+    end
+})
+
+ 
+local GemsTab = Window:CreateTab("Get Gems", nil) -- Title, 
+local GemsSection = GemsTab:CreateSection("Gems")
+ 
+local Button = GemsTab:CreateButton({
+   Name = "Click green part/block when teleported",
+   Callback = function()
+   local part = workspace.seabeastraidfourthsea.raid.Union.Part  -- Replace with the actual part information
+ 
+local function teleportLocalPlayerToPart(part)
+    local player = game.Players.LocalPlayer
+    if player and part then
+        local humanoidRootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+        if humanoidRootPart then
+            humanoidRootPart.CFrame = CFrame.new(part.Position + Vector3.new(0, 5, 0))  -- Adjust the Vector3 offset as needed
+        end
+    end
+end
+ 
+teleportLocalPlayerToPart(part)
+ 
+   end,
+})
+ 
+local MovesTab = Window:CreateTab("All Moves Admins Moves to", nil) -- Title, 
+local MovesSection = MovesTab:CreateSection("All Moves")
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Conquers First move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Conquers.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Dark First move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Dark.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Dark Second move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Dark.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Dark Third move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Dark.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gravity First move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Gravity.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gravity Second move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Gravity.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gravity Third move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Gravity.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gravity Fourth move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Gravity.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Love First move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Love.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Love Second move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Love.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Love Third move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.Love.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Fish First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Fish.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Fish Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Fish.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Fish Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Fish.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Ghoul First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Ghoul.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Ghoul Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Ghoul.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Ghoul Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Ghoul.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Human First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Human.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Human Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Human.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Human Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Human.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Mink First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Mink.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Mink Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Mink.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Mink Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Mink.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Sky First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Sky.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Race v4 Sky Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.RaceV4Sky.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Floppa Admin fruit Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.floppa.Frame.f.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Floppa Admin fruit First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.floppa.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Floppa Admin fruit Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.floppa.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Floppa Admin fruit Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.floppa.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gear 5 Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.gear5.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gear 5 First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gear 5 Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gear 5 Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.smash3.LocalScript.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gear 5 Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.smash1.LocalScript.RemoteEvent:FireServer(unpack(args))
+
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gojo First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.gojo.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gojo Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.gojo.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+ 
+local Button = MovesTab:CreateButton({
+   Name = "Gojo Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.gojo.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Barrier First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.barrier.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Barrier Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.barrier.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Barrier Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.barrier.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Barrier Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.barrier.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Barrier Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.barrier.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Baryon Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.baryon.Frame.transform.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Baryon First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.baryon.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Baryon Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.baryon.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Baryon Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.baryon.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Buddha Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.buda.Frame.transform.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Buddha First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.buda.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Buddha Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.buda.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Buddha Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.buda.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Chaos First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.chaos.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Chaos Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.chaos.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Chop First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.chop.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Chop Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.chop.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Chop Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.chop.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Control First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.control.Frame.smash.LocalScript.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Control Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.control.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Control Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.control.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Control Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.control.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "DoughV2 First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.donut2.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "DoughV2 Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.donut2.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "DoughV2 Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.donut2.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "DragonV2 First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.dragon2.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "DragonV2 Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.dragon2.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "DragonV2 Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.dragon2.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Flame First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.flame.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Flame Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.flame.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Flame Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.flame.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Gas First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.gas.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Gas Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.gas.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Gas Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.gas.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "IceV2 First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.ice2.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "IceV2 Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.ice2.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "IceV2 Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.ice2.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "IceV2 Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.ice2.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Kilo First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.kilo.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Kilo Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.kilo.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Kilo Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.kilo.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Kilo Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.kilo.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Leopard First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.leopard.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+       Name = "Leopard Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.leopard.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Leopard Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.leopard.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "LightV2 First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.light2.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "LightV2 Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.light2.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "LightV2 Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.light2.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "LightV2 Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.light2.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "MagmaV2 First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.magma2.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "MagmaV2 Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.magma2.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "MagmaV2 Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.magma2.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Mui Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.mui.Frame.zoan.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Mui First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.mui.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Mui Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.mui.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Paw First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.paw.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Phoenix First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.phoenix.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Phoenix Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.phoenix.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Phoenix Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.phoenix.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Portal First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.portal.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Portal Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.portal.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Portal Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.portal.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Portal Fourth Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.portal.Frame.smash4.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Skibidi First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.skibidi.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Skibidi Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.skibidi.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Skibidi Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.skibidi.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Smurfcat Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.smurfcat.Frame.zoan.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Smurfcat First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.smurfcat.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Smurfcat Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.smurfcat.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Smurfcat No idea what this Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.smurfcat.Frame.f2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Soccer First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.soccer.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Soccer First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.soccer.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+
+local Button = MovesTab:CreateButton({
+   Name = "One Punch First Move",
+   Callback = function()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.onepunch.Frame.smash.RemoteEvent:FireServer(unpack(args))
+
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "One Punch Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.onepunch.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Sharingan Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.sharingan.Frame.f.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Sharingan First Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.sharingan.Frame.smash.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+
+local Button = MovesTab:CreateButton({
+   Name = "Sharingan Second Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.sharingan.Frame.smash2.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+   Name = "Sharingan Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.sharingan.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = MovesTab:CreateButton({
+    Name = "BuddhaV2 Transform Move",
+    Callback = function()
+    local args = {
+            [1] = game:GetService("Players").LocalPlayer
+        }
+        
+        
+        game:GetService("Players").LocalPlayer.PlayerGui.buda2.Frame.transform.RemoteEvent:FireServer(unpack(args))
+    end,
+})
+
+
+local Button = MovesTab:CreateButton({
+   Name = "BuddhaV2 First Move",
+   Callback = function()
+      local args = {
+         [1] = game:GetService("Players").LocalPlayer
+      }
+      game:GetService("Players").LocalPlayer.PlayerGui.buda2.Frame.smash.RemoteEvent:FireServer(unpack(args))
+   end
+})
+
+
+local Button = MovesTab:CreateButton({
+    Name = "BuddhaV2 Second Move",
+    Callback = function()
+        local args = {
+            [1] = game:GetService("Players").LocalPlayer
+        }
+        game:GetService("Players").LocalPlayer.PlayerGui.buda2.Frame.smash3.RemoteEvent:FireServer(unpack(args))
+    end
+})
+
+
+local Button = MovesTab:CreateButton({
+   Name = "Sharingan Third Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.sharingan.smash3.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+
+local TransformTab = Window:CreateTab("Transforms", nil) -- Title, 
+local TransformSection = MovesTab:CreateSection("All Transforms")
+
+local Button = TransformTab:CreateButton({
+   Name = "Smurfcat Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.smurfcat.Frame.zoan.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = TransformTab:CreateButton({
+   Name = "Mui Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.mui.Frame.zoan.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = TransformTab:CreateButton({
+   Name = "Floppa Admin fruit Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.floppa.Frame.f.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = TransformTab:CreateButton({
+   Name = "Baryon Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.baryon.Frame.transform.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local Button = TransformTab:CreateButton({
+   Name = "Gear 5 Transform Move",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.gear5.RemoteEvent:FireServer(unpack(args))
+ 
+   end,
+})
+
+local FlopeTab = Window:CreateTab("Free gamepasses", 4483362458) -- Title, Image
+local FlopeSection = FlopeTab:CreateSection("Updated free gamepasses")
+
+local Button = FreeTab:CreateButton({
+   Name = "Race V4",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.racev4.RemoteEvent:FireServer()
+ 
+   end,
+})
+    
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get Free storage slot",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.SLOT.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get Darkblade V3",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.darkbaldev3.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get lightv2",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.lightv2.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get gear 5",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.gear5.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get mui",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.mui.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get enchant",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.enchant.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get leopard v2",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.leov2.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get gojo",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+ 
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame.gojo.RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get dragon",
+   Callback = function()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.fruits:FindFirstChild("3b").RemoteEvent:FireServer()
+
+
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+    Name = "Get dough",
+    Callback = function()
+        local args = {
+            [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.fruits:FindFirstChild("1b").RemoteEvent:FireServer(unpack(args))
+
+    end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get spirit",
+   Callback = function()
+   local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.fruits:FindFirstChild("2b").RemoteEvent:FireServer()
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get portal",
+   Callback = function()
+local args = {
+    [1] = game:GetService("Players").LocalPlayer
+}
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 2 -- Change this to target a different '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            -- Fire the RemoteEvent of the second '3b' TextButton found
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break -- Stop the loop after firing the event of the second '3b' found
+            end
+        end
+    end
+end
+
+ 
+   end,
+})
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get portal",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 2
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break
+            end
+        end
+    end
+end
+
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get control",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 3 -- We want to fire the event from the third '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break -- Stop the loop after firing the event of the third '3b' found
+            end
+        end
+    end
+end
+
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get venom",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 4 -- Set this to 4 for the fourth '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break
+            end
+        end
+    end
+end
+
+if count < targetCount then
+    warn("Less than four '3b' TextButtons found")
+end
+
+
+local Button = FlopeTab:CreateButton({
+   Name = "Get venom",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 4 -- Set this to 4 for the fourth '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break
+            end
+        end
+    end
+end
+
+if count < targetCount then
+    warn("Less than four '3b' TextButtons found")
+end
