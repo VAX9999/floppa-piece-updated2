@@ -1709,8 +1709,8 @@ game:GetService("Players").LocalPlayer.PlayerGui.rubber5nd.Frame.gear5.RemoteEve
    end,
 })
 
-local FlopeTab = Window:CreateTab("Free gamepasses", 4483362458) -- Title, Image
-local FlopeSection = FlopeTab:CreateSection("Updated free gamepasses")
+local FreeTab = Window:CreateTab("Free gamepasses", 4483362458) -- Title, Image
+local FlopeSection = FreeTab:CreateSection("Updated free gamepasses")
 
 local Button = FreeTab:CreateButton({
    Name = "Race V4",
@@ -1725,7 +1725,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
 })
     
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get Free storage slot",
    Callback = function()
    local args = {
@@ -1737,7 +1737,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button =  FreeTab:CreateButton({
    Name = "Get Darkblade V3",
    Callback = function()
    local args = {
@@ -1749,7 +1749,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button =  FreeTab:CreateButton({
    Name = "Get lightv2",
    Callback = function()
    local args = {
@@ -1761,7 +1761,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button =  FreeTab:CreateButton({
    Name = "Get gear 5",
    Callback = function()
    local args = {
@@ -1773,7 +1773,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get mui",
    Callback = function()
    local args = {
@@ -1785,7 +1785,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button =  FreeTab:CreateButton({
    Name = "Get enchant",
    Callback = function()
    local args = {
@@ -1797,7 +1797,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get leopard v2",
    Callback = function()
    local args = {
@@ -1809,7 +1809,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get gojo",
    Callback = function()
    local args = {
@@ -1821,7 +1821,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.ScrollingFrame
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button =  FreeTab:CreateButton({
    Name = "Get dragon",
    Callback = function()
 local args = {
@@ -1835,7 +1835,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.fruits:FindFir
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
     Name = "Get dough",
     Callback = function()
         local args = {
@@ -1847,7 +1847,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.fruits:FindFir
     end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get spirit",
    Callback = function()
    local args = {
@@ -1859,7 +1859,7 @@ game:GetService("Players").LocalPlayer.PlayerGui.menuypc.gamepass.fruits:FindFir
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button =  FreeTab:CreateButton({
    Name = "Get portal",
    Callback = function()
 local args = {
@@ -1890,7 +1890,7 @@ end
    end,
 })
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get portal",
    Callback = function()
       local args = {
@@ -1919,7 +1919,7 @@ for i, obj in ipairs(fruitsContainer:GetChildren()) do
 end
 
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get control",
    Callback = function()
       local args = {
@@ -1948,7 +1948,7 @@ for i, obj in ipairs(fruitsContainer:GetChildren()) do
 end
 
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get venom",
    Callback = function()
       local args = {
@@ -1981,7 +1981,7 @@ if count < targetCount then
 end
 
 
-local Button = FlopeTab:CreateButton({
+local Button = FreeTab:CreateButton({
    Name = "Get venom",
    Callback = function()
       local args = {
