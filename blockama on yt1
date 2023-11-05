@@ -1890,34 +1890,6 @@ end
    end,
 })
 
-local Button = FreeTab:CreateButton({
-   Name = "Get portal",
-   Callback = function()
-      local args = {
-          game:GetService("Players").LocalPlayer
-      }
-   end
-})
-
-local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
-
-local count = 0
-local targetCount = 2
-
-for i, obj in ipairs(fruitsContainer:GetChildren()) do
-    if obj.Name == "3b" and obj:IsA("TextButton") then
-        count = count + 1
-        if count == targetCount then
-            local remoteEvent = obj:FindFirstChild("RemoteEvent")
-            if remoteEvent then
-                remoteEvent:FireServer()
-                break
-            end
-        end
-    end
-end
-
 
 local Button = FreeTab:CreateButton({
    Name = "Get control",
@@ -1982,7 +1954,7 @@ end
 
 
 local Button = FreeTab:CreateButton({
-   Name = "Get venom",
+   Name = "Get mammoth",
    Callback = function()
       local args = {
           game:GetService("Players").LocalPlayer
@@ -1994,7 +1966,103 @@ local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
 
 local count = 0
-local targetCount = 4 -- Set this to 4 for the fourth '3b' TextButton
+local targetCount = 8 -- Set this to 4 for the fourth '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break
+            end
+        end
+    end
+end
+
+if count < targetCount then
+    warn("Less than four '3b' TextButtons found")
+end
+
+local Button = FreeTab:CreateButton({
+   Name = "Get red ball",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 5 -- Set this to 4 for the fourth '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break
+            end
+        end
+    end
+end
+
+if count < targetCount then
+    warn("Less than four '3b' TextButtons found")
+end
+
+local Button = FreeTab:CreateButton({
+   Name = "Get Spike ball",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 6 -- Set this to 4 for the fourth '3b' TextButton
+
+for i, obj in ipairs(fruitsContainer:GetChildren()) do
+    if obj.Name == "3b" and obj:IsA("TextButton") then
+        count = count + 1
+        if count == targetCount then
+            local remoteEvent = obj:FindFirstChild("RemoteEvent")
+            if remoteEvent then
+                remoteEvent:FireServer()
+                break
+            end
+        end
+    end
+end
+
+if count < targetCount then
+    warn("Less than four '3b' TextButtons found")
+end
+
+local Button = FreeTab:CreateButton({
+   Name = "Get spikey ball",
+   Callback = function()
+      local args = {
+          game:GetService("Players").LocalPlayer
+      }
+   end
+})
+
+local playerGui = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local fruitsContainer = playerGui:WaitForChild("menuypc"):WaitForChild("gamepass"):WaitForChild("fruits")
+
+local count = 0
+local targetCount = 7 -- Set this to 4 for the fourth '3b' TextButton
 
 for i, obj in ipairs(fruitsContainer:GetChildren()) do
     if obj.Name == "3b" and obj:IsA("TextButton") then
